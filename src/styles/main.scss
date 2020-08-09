@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+html, body {
+  height: 100%;
+  min-height: 1600px;
+}
+
+#root {
+  height: 100%;
+}
+
+.main-container {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 2200px;
+}
+
+.start-page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: $bg-dark;
+  padding: 40px 20px;
+  
+  @media all and (min-width: 768px) {
+    padding: 100px 60px;
+    padding-top: 75px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
+    
+    @media all and (min-width: 768px) {
+      max-width: 75%;
+    }
+    
+    img {
+      width: 100%;
+      margin-top: 48px;
+      border: 5px solid black;
+      border-radius: 15px;
+      -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+
+      @media all and (min-width: 768px) {
+        border-radius: 35px;
+      }
+    }
+  }
+}
+
+.btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $fg-dark;
+  color: $fg-lt;
+  border: none;
+
+  &:hover {
+    background-color: #fba022;
+    box-shadow: 0 0 2px #fba022,
+                0 0 10px #fba022,
+                0 0 15px #fba022;
+    cursor: pointer;
+  }
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $fg-dark;
+  color: $bg-dark;
+  border: 2px solid $bg-dark;
+
+  &:hover {
+    color: $fg-lt;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5),
+                0 0 10px rgba(0,0,0,0.5),
+                0 0 15px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+}
+
+
+// Utility classes
+.bg-lt {
+  background-color: $bg-lt;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.fg-lt {
+  color: $fg-lt;
+}
+
+.fg-dark {
+  color: $fg-dark;
+}
+
+.fg-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.heading-m {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.heading-l {
+  font-size: 64px;
+  line-height: 70px;
+  margin-bottom: 32px;
+  margin-top: 0;
+  padding-bottom: 0;
+}

@@ -1,0 +1,13 @@
+.results-page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: $bg-dark;
+  padding: 40px 20px;
+  
+  @media all and (min-width: 768px) {
+    padding: 200px 60px;
+  }
+}
